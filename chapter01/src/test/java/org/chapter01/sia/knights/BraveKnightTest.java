@@ -23,4 +23,5 @@ public class BraveKnightTest {
 		knight.embarkOnQuest();
 		verify(mockQuest, times(1)).embark();// 验证embark()调用了一次
 	}
+
 }
