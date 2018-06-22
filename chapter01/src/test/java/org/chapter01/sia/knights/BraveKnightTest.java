@@ -24,4 +24,11 @@ public class BraveKnightTest {
 		verify(mockQuest, times(1)).embark();// 验证embark()调用了一次
 	}
 
+	@Test
+	public void BraveKnightMinstrelTest() {
+		Quest quest = mock(Quest.class);
+		BraveKnightMinstrel knightMinstrel = new BraveKnightMinstrel(quest, new Minstrel(System.out));
+		knightMinstrel.embarkOnQuest();
+		verify(quest, times(1)).embark();
+	}
 }
