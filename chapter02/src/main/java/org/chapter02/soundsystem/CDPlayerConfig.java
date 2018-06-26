@@ -16,7 +16,10 @@ import org.springframework.context.annotation.Configuration;
  * @updates:
  */
 @Configuration
-@ComponentScan
+// @ComponentScan()
+// @ComponentScan("org.chapter02.soundsystem")
+// @ComponentScan(basePackages = "org.chapter02.soundsystem")
+@ComponentScan(basePackages = { "org.chapter02.soundsystem" })
 public class CDPlayerConfig {
 	// @ComponentScan默认扫描与配置类相同的包
 }
