@@ -24,7 +24,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = CDPlayerConfig.class)
 public class CDPlayerTest {
 	@Autowired
-	private CompactDisc cd;
+	private CompactDisc cd;// 注入接口类，会代理注入实体类
 
 	@Test
 	public void cdshouldNotBeNull() {

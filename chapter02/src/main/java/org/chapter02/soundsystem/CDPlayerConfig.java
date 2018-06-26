@@ -18,4 +18,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 public class CDPlayerConfig {
+	// @ComponentScan默认扫描与配置类相同的包
 }
